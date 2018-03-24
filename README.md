@@ -117,5 +117,6 @@ doStuff(...condition ? [value] : [])
 ```
 
 sources:
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 - https://davidwalsh.name/spread-operator
 - http://2ality.com/2015/01/es6-set-operations.html
