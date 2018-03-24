@@ -13,7 +13,7 @@
 
 ## Duplicate array
 
-```
+```javascript
 // [...a, ...b]
 // is the same as
 // [...a].concat([...b]);
