@@ -1,7 +1,7 @@
 # javascript-spread-operator
 
 
-## Combine arrays
+### Combine arrays
 
 ```javascript
 > arr1.push(...arr2);
@@ -11,7 +11,7 @@
 > var arr2 = ['one', ...arr1, 'four', 'five'];
 ```
 
-## Duplicate array
+### Duplicate array
 
 ```javascript
 // [...a, ...b]
@@ -24,14 +24,14 @@
 >> [1, 2, 3, 1, 2, 3]
 ```
 
-## Copy array
+### Copy array
 
 ```javascript
 const arr1 = [1, 2, 3];
 const arr2 = [...arr1];
 ```
 
-## Convert iterables to arrays
+### Convert iterables to arrays
 
 ```javascript
 >  [...new Map().set(true,'yes').set(false,'no')]
@@ -40,27 +40,7 @@ const arr2 = [...arr1];
 >> [[true: 'yes], [false, 'no]]
 ```
 
-## Set union
-
-```javascript
-> const a = new Set([1, 2, 3]);
-> const b = new Set([4, 3, 2]);
-> const union = new Set([...a, ...b]);
-
->> {1, 2, 3, 4}
-```
-
-## Set intersection
-
-```javascript
-> const a = new Set([1, 2, 3]);
-> const b = new Set([4, 3, 2]);
-> const intersection = new Set([...a].filter(x => b.has(x)));
-
->> {2, 3}
-```
-
-## Using `Math` functions
+### Using `Math` functions
 
 ```javascript
 > const numbers = [9, 4, 5, 1];
@@ -70,7 +50,7 @@ const arr2 = [...arr1];
 ```
 
 
-## Convert string to character array
+### Convert string to character array
 
 ```javascript
 > const str = "hello";
@@ -87,7 +67,9 @@ doStuff(...condition ? [value] : [])
 (condition) ? doStuff(value) : doStuff();
 ```
 
-## Destructuring
+## Objects
+
+### Destructuring
 ```javascript
 > const {x, y, ...z} = {x: 1, y: 2, a: 3, b: 4};
 > console.log(x);
@@ -99,7 +81,8 @@ doStuff(...condition ? [value] : [])
 >> {a: 3, b: 4}
 ```
 
-## Conditional object properties
+
+### Conditional object properties
 
 ```javascript
 > {
@@ -107,4 +90,26 @@ doStuff(...condition ? [value] : [])
 >   b: 2, 
 >   ...(condition ? {c: 3} : {d: 4})
 > }
+```
+
+## Sets
+
+### Set union
+
+```javascript
+> const a = new Set([1, 2, 3]);
+> const b = new Set([4, 3, 2]);
+> const union = new Set([...a, ...b]);
+
+>> {1, 2, 3, 4}
+```
+
+### Set intersection
+
+```javascript
+> const a = new Set([1, 2, 3]);
+> const b = new Set([4, 3, 2]);
+> const intersection = new Set([...a].filter(x => b.has(x)));
+
+>> {2, 3}
 ```
