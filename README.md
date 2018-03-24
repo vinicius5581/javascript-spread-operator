@@ -20,6 +20,13 @@
 >> [1, 2, 3, 1, 2, 3]
 ```
 
+## Copy array
+
+```javascript
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1];
+```
+
 ## Convert iterables to arrays
 
 ```javascript
