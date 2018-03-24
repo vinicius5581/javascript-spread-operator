@@ -78,9 +78,9 @@ doStuff(...condition ? [value] : [])
 ## Conditional object properties
 
 ```javascript
-{
- a: 1,
- b: 2, 
- ...(check ? {c: 3} : {d: 4})
-}
+> {
+>   a: 1,
+>   b: 2, 
+>   ...(check ? {c: 3} : {d: 4})
+> }
 ```
