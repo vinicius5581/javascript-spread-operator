@@ -14,6 +14,10 @@
 ## Duplicate array
 
 ```
+// [...a, ...b]
+// is the same as
+// [...a].concat([...b]);
+
 > const arr = [1, 2, 3];
 > const doublearr = [...arr, ...arr];
 
@@ -34,6 +38,16 @@ const arr2 = [...arr1];
 
 
 >> [[true: 'yes], [false, 'no]]
+```
+
+## Set union
+
+```javascript
+> const a = new Set([1, 2, 3]);
+> const b = new Set([4, 3, 2]);
+> const union = new Set([...a, ...b]);
+
+>> {1, 2, 3, 4}
 ```
 
 ## Using `Math` functions
