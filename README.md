@@ -1,6 +1,13 @@
 # javascript-spread-operator
 
 
+## Combine arrays
+
+```javascript
+> arr1.push(...arr2);
+> arr1.unshift(...arr2);
+```
+
 ## Duplicate array
 
 ```
