@@ -50,6 +50,16 @@ const arr2 = [...arr1];
 >> {1, 2, 3, 4}
 ```
 
+## Set intersection
+
+```javascript
+> const a = new Set([1, 2, 3]);
+> const b = new Set([4, 3, 2]);
+> const intersection = new Set([...a].filter(x => b.has(x)));
+
+>> {2, 3}
+```
+
 ## Using `Math` functions
 
 ```javascript
