@@ -36,6 +36,15 @@ const arr2 = [...arr1];
 >> [[true: 'yes], [false, 'no]]
 ```
 
+## Using `Math` functions
+
+```javascript
+> const numbers = [9, 4, 5, 1];
+> Math.min(...numbers);
+
+>> 1
+```
+
 
 ## Convert string to character array
 
