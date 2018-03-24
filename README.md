@@ -1,5 +1,7 @@
-# javascript-spread-operator
+# Javascript spread operator
 
+
+## Arrays
 
 ### Combine arrays
 
@@ -113,3 +115,7 @@ doStuff(...condition ? [value] : [])
 
 >> {2, 3}
 ```
+
+sources:
+- https://davidwalsh.name/spread-operator
+- http://2ality.com/2015/01/es6-set-operations.html
