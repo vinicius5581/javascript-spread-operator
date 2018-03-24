@@ -6,6 +6,9 @@
 ```javascript
 > arr1.push(...arr2);
 > arr1.unshift(...arr2);
+
+> var arr1 = ['two', 'three'];
+> var arr2 = ['one', ...arr1, 'four', 'five'];
 ```
 
 ## Duplicate array
